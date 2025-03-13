@@ -1,0 +1,18 @@
+{
+  "tasks": {
+    "dev": "deno run --watch main.ts"
+  },
+  "imports": {
+    "@std/expect": "jsr:@std/expect@1",
+    "@std/testing": "jsr:@std/testing@^1.0.9",
+    "astral": "jsr:@astral/astral@0.5.2"
+  },
+  "compilerOptions": {
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "lib": [
+      "deno.window",
+      "dom"
+    ]
+  }
+}
