@@ -8,7 +8,9 @@ let server: StaticServer;
 describe("browser tests", () => {
   let browser: Browser;
   beforeAll(async () => {
-    browser = await launch();
+    browser = await launch({
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    });
     server = new StaticServer();
     server.listen(3000);
   });
