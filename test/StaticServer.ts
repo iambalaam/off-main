@@ -20,7 +20,7 @@ export class StaticServer {
         serveDir(req, {
           fsRoot: "./test/static",
           quiet: true,
-        })
+        }),
     );
   }
 
