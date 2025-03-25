@@ -14,7 +14,8 @@
     "noUncheckedIndexedAccess": true,
     "lib": [
       "deno.window",
-      "dom"
+      "dom",
+      "webworker"
     ]
   }
 }
